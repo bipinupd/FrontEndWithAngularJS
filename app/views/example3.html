@@ -1,0 +1,21 @@
+<div class="container">
+    <h3> Example Controller : Adding name and city in a list</h3>
+
+    <div class="row">
+      <div class="col-sm-4">Name:</div>
+      <div class="col-sm-4"><input type="text" ng-model="name"/></div>
+    </div>
+    <div class="row"></div>
+    <div class="row">
+      <div class="col-sm-4">City:</div>
+      <div class="col-sm-4"><input type="text" ng-model="city"/></div>
+    </div>
+    <div class="row">
+      <button type="button" class=".btn-default" ng-click="add()">Add</button>
+    <div>
+    <h3>  Show list data </h3>
+    <ul>
+        <li ng-repeat="cust in customers">
+          {{ cust.name }} - {{ cust.city }}</li>
+    </ul>
+</div>

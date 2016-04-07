@@ -1,0 +1,29 @@
+<div class="container">
+  <div class="row">
+    <h3> Example 1: Showing Data binding </h3>
+    Name: <input type="text" ng-model="name" /> 
+    <h1> {{ name }} </h1>
+  </div>
+  <div data-ng-init="names=['Dave','Napur','Heedy','Shriva']">
+    <h3>Example 2: Looping with the ng-repeat Directive</h3>
+    <ul>
+    <li data-ng-repeat="name in names">{{ name }}</li>
+    </ul>
+  </div>
+  <div ng-init="qty=1;cost=2">
+    <h3> Example 3 : Showing databinding and expression as example </h3>
+    <h4>Invoice:</h4>
+    <div class="row">
+      <div class="col-sm-4">Quantity:</div>
+      <div class="col-sm-4"><input type="number" min="0" ng-model="qty"/></div>
+    </div>
+    <div class="row">
+      <div class="col-sm-4">Costs:</div>
+      <div class="col-sm-4"><input type="number" min ="0" ng-model="cost"/></div>
+    </div>
+    <div class="row">
+      <div class="col-sm-4"><b>Total:</b></div>
+      <div class="col-sm-4">{{qty * cost | currency}}</div>
+    </div>
+  </div>
+</div>

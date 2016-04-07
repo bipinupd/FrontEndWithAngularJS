@@ -1,0 +1,25 @@
+<div class="container">
+  <div class="row">
+    <h3> Example 1: Get the value from Value Object </h3>
+    <h4 ng-bind-html="clientId">/h4>
+  </div>
+  <div class="row">
+    <h3> Example 2: Service get the current time (using $interval)</h3>
+    <h4>{{theTime}}</h4>
+  </div>
+  <div class="row">
+    <h3> Example 2: Click to load todo list ($http)</h3>
+    <button type="button" ng-click="getData()">Load Todos</button>
+    <div ng-if = "todos">
+      <ul>
+          <li ng-repeat="data in todos">
+            <h4>{{ data.text }} -  <span ng-if="data.done" class="glyphicon glyphicon-ok-circle"></span>
+                               <span ng-if="!data.done" class="glyphicon glyphicon-remove-circle"></span>
+            </h4>
+          </li>
+      </ul>
+    </div>
+  </div>
+
+
+</div>

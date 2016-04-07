@@ -1,0 +1,20 @@
+  <div class="container">
+      <div class="row">
+        <h2> Fiter 1: Currency </h2>
+        <h3> {{ 23333 | currency }} </h3>
+      </div>
+      <div class="row">
+          <h2>Filter 2: Date</h2>
+          <h3> Date format (MM YYYY) </h3>
+          <h4>{{ '2015-04-06T19:00:00.000Z' | date : 'MM yyyy' }} </h4>
+          <h3> Date format (YYYY-MM-DD) </h3>
+          <h4>{{ '2015-04-06T19:00:00.000Z' | date : 'yyyy-MM-dd' }} </h4>
+      </div>
+      <div class="row">
+          <h2>Filter 2: Change to uppercase and Lowercase</h2>
+          <h3> To uppercase </h3>
+          <h4>hello to {{ 'hello' | uppercase }} </h4>
+          <h3> To lowercase </h3>
+          <h4>HELLO to {{ 'HELLO' | lowercase }} </h4>
+      </div>
+    </div>
