@@ -1,23 +1,38 @@
-<div class="jumbotron">
-  <h1>'Allo, 'Allo!</h1>
-  <p class="lead">
-    <img src="images/yeoman.png" alt="I'm Yeoman"><br>
-    Always a pleasure scaffolding your apps.
-  </p>
-  <p><a class="btn btn-lg btn-success" ng-href="#/">Splendid!<span class="glyphicon glyphicon-ok"></span></a></p>
+<div class = "container">
+  <h3> Showing the use of ng-table </h3>
+  <table ng-table="tableParams" class="table">
+          <tr ng-repeat="user in myValues">
+              <td data-title="'Name'" sortable="'name'">
+                  {{user.name}}
+              </td>
+              <td data-title="'Age'" sortable="'age'">
+                  {{user.age}}
+              </td>
+          </tr>
+  </table>
 </div>
-
-<div class="row marketing">
-  <h4>HTML5 Boilerplate</h4>
-  <p>
-    HTML5 Boilerplate is a professional front-end template for building fast, robust, and adaptable web apps or sites.
-  </p>
-
-  <h4>Angular</h4>
-  <p>
-    AngularJS is a toolset for building the framework most suited to your application development.
-  </p>
-
-  <h4>Karma</h4>
-  <p>Spectacular Test Runner for JavaScript.</p>
+<div class = "container">
+  <h3> Showing the use of ng-table [Reading the json file] </h3>
+  <table ng-table="tableParamsFromJSONFile" class="table">
+          <tr ng-repeat="user in jsonReadFromFile">
+              <td data-title="'ID'" sortable="'id'">
+                  {{user.id}}
+              </td>
+              <td data-title="'FirstName'" sortable="'first_name'">
+                  {{user.first_name}}
+              </td>
+              <td data-title="'Last Name'" sortable="'last_name'">
+                  {{user.last_name}}
+              </td>
+              <td data-title="'Email'" sortable="'email'">
+                  {{user.email}}
+              </td>
+              <td data-title="'Country'" sortable="'country'">
+                  {{user.country}}
+              </td>
+              <td data-title="'IP Address'" sortable="'ip_address'">
+                  {{user.ip_address}}
+              </td>
+          </tr>
+  </table>
 </div>

@@ -1,4 +1,4 @@
-Angular presentation in Jonha.
+Angular presentation in Jonah.
 
 Presentation slides [![Slides](http://www.slideshare.net/bipin_upd/front-end-development-with-angular-js)](http://www.slideshare.net/bipin_upd/front-end-development-with-angular-js)
 
