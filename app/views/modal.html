@@ -1,0 +1,33 @@
+<div id="myModal" class="modal">
+<div class="modal-header">
+  <h3>Example wiith default table. Click on the row. The text-box in parent area will have its ID</h3>
+</div>
+<div class="modal-content">
+  <table ng-table="modelCtl.tableParamsFromJSONFile" class="table table-hover table-bordered">
+          <tr ng-repeat="user in modelCtl.jsonReadFromFile" ng-click='modelCtl.setSelected(user)'
+                onMouseOver="this.className='highlight'" onMouseOut="this.className='normal'">
+              <td data-title="'ID'" sortable="'id'">
+                  {{user.id}}
+              </td>
+              <td data-title="'Member'" sortable="'Member'">
+                  {{user.Member}}
+              </td>
+              <td data-title="'Pensioner'" sortable="'Pensioner'">
+                  {{user.Pensioner}}
+              </td>
+              <td data-title="'Full Name'" sortable="'fullname'">
+                  {{user.fullname}}
+              </td>
+              <td data-title="'Address'" sortable="'Address'">
+                  {{user.Address}}
+              </td>
+              <td data-title="'Email'" sortable="'email'">
+                  {{user.email}}
+              </td>
+          </tr>
+  </table>
+</div>
+<div class="modal-footer">
+  <button type="button" class="btn" ng-click="modelCtl.hide()">Close</button>
+</div>
+</div>

@@ -16,7 +16,8 @@ angular
     'ngRoute',
     'ngSanitize',
     'ngTouch',
-    'ngTable'
+    'ngTable',
+    'mgcrea.ngStrap.modal'
   ])
   .config(function ($routeProvider) {
     $routeProvider
@@ -42,6 +43,11 @@ angular
       })
       .when('/example5', {
         templateUrl: 'views/example5.html'
+      })
+      .when('/modal', {
+        templateUrl: 'views/examplemodal.html',
+        controller: 'ModelCtrl',
+        controllerAs: 'modelCtl'
       })
       .otherwise({
         redirectTo: '/'
